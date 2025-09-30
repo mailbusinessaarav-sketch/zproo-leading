@@ -1,58 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home — Zproo EV Rides</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZPROO — EV Rides</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;">
-    <div class="logo"><span class="logo-badge">⚡</span><span>Zproo EV Rides</span></div>
-    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="founders.html">Founders</a><a href="team.html">Team</a><a href="services.html">Services</a><a href="drivers.html">Drivers</a><a href="investors.html">Investors</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
-    <a class="btn" href="contact.html">Get Early Access</a>
+
+<!-- Header -->
+<header class="nav">
+  <div class="container inner">
+    <div class="logo"><span>⚡</span><b>ZPROO</b></div>
+    <nav style="display:flex;gap:10px">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="zride-pass.html">zRide Pass</a>
+      <a href="casual-rides.html">Casual Rides</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px">
+      <a class="btn btn-outline" href="casual-rides.html">Book Ride</a>
+      <a class="btn" href="zride-pass.html">Get Pass</a>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <span class="pill">City‑only EV Ride Platform</span>
-    <h1 style="font-size:44px;line-height:1.05;font-weight:800;margin-top:10px">Smarter city rides. Cleaner air.</h1>
-    <p class="muted" style="max-width:620px">Book reliable electric rides with transparent pricing and flexible options — City Rides, Airport transfers, Self Drive and Ride Sharing. Internal logic at ₹18/km for healthy unit economics.</p>
-    <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
-      <a class="btn" href="services.html">Explore Services</a>
-      <a class="btn secondary" href="about.html">Why EV Rides?</a>
+<!-- Hero -->
+<section class="section">
+  <div class="container hero">
+    <div>
+      <h1 class="h1">No Surge. No Stress.<br>Clean Electric Rides.</h1>
+      <p class="muted">Affordable EV rides, Airport Transfers, Rentals, and zRide Pass.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+        <a class="btn" href="zride-pass.html">Get zRide Pass</a>
+        <a class="btn btn-yellow" href="casual-rides.html">Book Casual Ride</a>
+        <a class="btn btn-outline" href="rentals.html">Rent a Car</a>
+      </div>
     </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container grid cols-4">
-    <div class="card" style="padding:16px"><h3>City Rides</h3><p class="muted small">Fast intra‑city trips within 70 km radius.</p></div>
-    <div class="card" style="padding:16px"><h3>Airport</h3><p class="muted small">Pickup & Drop with upfront estimates.</p></div>
-    <div class="card" style="padding:16px"><h3>Self Drive</h3><p class="muted small">Take control with EV rentals.</p></div>
-    <div class="card" style="padding:16px"><h3>Ride Sharing</h3><p class="muted small">Affordable shared rides, safety first.</p></div>
-  </div>
-</section>
-<div class="hr"></div>
-<section class="section">
-  <div class="container grid cols-3">
-    <div class="card" style="padding:16px"><h3>Safe</h3><p class="muted small">Verified drivers • Live GPS • Panic assist</p></div>
-    <div class="card" style="padding:16px"><h3>Green</h3><p class="muted small">Zero tailpipe • Quieter rides • Cleaner air</p></div>
-    <div class="card" style="padding:16px"><h3>On‑time</h3><p class="muted small">Shift coverage 24×7 • Reliable ETAs</p></div>
+    <div class="hero-card"><b style="font-size:70px">⚡</b></div>
   </div>
 </section>
 
-<footer class="footer">
+<!-- Why Choose -->
+<section class="section">
   <div class="container">
-    <div class="logo"><span class="logo-badge">⚡</span><span>Zproo EV Rides</span></div>
-    <p class="muted small">Tech Centre, 5th floor, 502 Plot No. 30, Phase 1, Rajiv Gandhi Infotech Park, Hinjewadi, Pune 411057</p>
-    <p class="muted small">📱 7758908732 • ✉️ info@zproo.com</p>
-    <p class="muted small">© 2025 Zproo EV Pvt Ltd. All rights reserved.</p>
+    <h2>Why Choose ZPROO?</h2>
+    <div class="grid cols-4" style="margin-top:16px">
+      <div class="card">🌿 <b>Sustainability</b><p class="muted">100% electric fleet</p></div>
+      <div class="card">🟡 <b>Transparency</b><p class="muted">No hidden charges</p></div>
+      <div class="card">🧑‍💼 <b>Customer First</b><p class="muted">Satisfaction focused</p></div>
+      <div class="card">💡 <b>Innovation</b><p class="muted">Better experience</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container card cta">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+      <h3>Join the Electric Revolution</h3>
+      <div style="display:flex;gap:10px">
+        <a class="btn btn-outline" href="https://forms.gle/company" target="_blank">Contact Sales</a>
+        <a class="btn btn-yellow" href="https://forms.gle/company" target="_blank">Request Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="muted">© <span id="year"></span> ZPROO Electric Ride Platform</p>
   </div>
 </footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
