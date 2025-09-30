@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zproo EV Rides — City-only Electric Rides</title>
+  <meta name="description" content="Smarter city rides. Cleaner air. Transparent pricing and flexible Ride Passes for students and office commuters.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:rgba(255,255,255,0.06);
+      --muted:rgba(255,255,255,0.75);
+      --line:rgba(255,255,255,0.12);
+      --accent1:#00e0ff;
+      --accent2:#22c55e;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:#fff;
+      background: radial-gradient(40% 20% at 50% 0%, rgba(14,165,233,.4), transparent 60%),
+                 radial-gradient(30% 20% at 100% 0%, rgba(34,197,94,.35), transparent 60%),
+                 var(--bg);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .btn{background:linear-gradient(135deg,var(--accent1),#4ade80);border:0;padding:12px 18px;border-radius:16px;color:#001018;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid var(--line);color:#fff}
+    header{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav a{opacity:.85}
+    nav a:hover{opacity:1}
+    .row{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width:900px){.row{grid-template-columns:1.1fr .9fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:24px}
+    .pill{display:inline-block;border:1px solid var(--line);background:rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;font-size:12px}
+    .list{list-style:none;padding:0;margin:0}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .check{display:inline-block;min-width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,var(--accent1),#4ade80)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid.cols-4{grid-template-columns:repeat(4,1fr)}}
+    @media(min-width:700px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .hero{padding:64px 0 36px}
+    @media(min-width:900px){.hero{padding:96px 0 60px}}
+    .footer{border-top:1px solid var(--line);padding:40px 0}
+    input[type=email]{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.35);color:#fff}
+    .tag{font-size:12px;border-radius:999px;padding:4px 8px;background:#e5ffe9;color:#063a12;font-weight:700;display:inline-block}
+    .price{font-size:28px;font-weight:800}
+    .small{font-size:14px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo-badge{display:grid;place-content:center;height:36px;width:36px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid var(--line)}
+    .section{padding:56px 0}
+    .cta{padding:28px}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;">
+      <div class="logo"><span class="logo-badge">⚡</span><span>Zproo EV Rides</span></div>
+      <nav style="display:flex;gap:18px;font-size:14px">
+        <a href="#features">Features</a>
+        <a href="#pass">Ride Pass</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="btn" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container row">
+      <div>
+        <span class="pill">New • City-only EV Ride Platform</span>
+        <h1 style="font-size:44px;line-height:1.05;margin:14px 0 8px;font-weight:800">Smarter city rides.<br>Cleaner air.</h1>
+        <p class="muted" style="max-width:580px">Book reliable electric rides with transparent pricing and flexible Ride Passes for students, office commuters, and frequent travelers.</p>
+        <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+          <button class="btn">Book a Ride</button>
+          <a class="btn secondary" href="#pricing">See Pricing</a>
+        </div>
+        <div class="muted small" style="display:flex;gap:18px;margin-top:14px;flex-wrap:wrap">
+          <span>🛡️ Safety first</span><span>🌿 Zero tailpipe</span><span>⏱️ 24/7</span>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="padding:18px">
+          <h3>🚗 Live ETA (Demo)</h3>
+          <div class="grid cols-2">
+            <div class="card" style="padding:14px"><div class="muted small">Pickup</div><div style="margin-top:6px;font-weight:600">📍 Hinjewadi, Pune</div></div>
+            <div class="card" style="padding:14px"><div class="muted small">ETA</div><div style="margin-top:6px;font-weight:600">4–6 minutes</div></div>
+            <div class="card" style="padding:14px"><div class="muted small">Driver</div><div style="margin-top:6px;font-weight:600">Verified • On-time 98%</div></div>
+            <div class="card" style="padding:14px"><div class="muted small">Vehicle</div><div style="margin-top:6px;font-weight:600">Tata Tiago EV</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container grid cols-4">
+      <div class="card" style="padding:16px"><h4>⚡ All-Electric Fleet</h4><p class="muted small">Quiet, clean, and efficient rides across the city.</p></div>
+      <div class="card" style="padding:16px"><h4>⏱️ On-Time Reliability</h4><p class="muted small">Driver shifts 6am–6pm & 6pm–6am for 24/7 coverage.</p></div>
+      <div class="card" style="padding:16px"><h4>🛡️ Safety-First</h4><p class="muted small">Verified drivers, live GPS, panic button, and support.</p></div>
+      <div class="card" style="padding:16px"><h4>🌿 Greener Choice</h4><p class="muted small">Zero tailpipe emissions within a 70 km city radius.</p></div>
+    </div>
+  </section>
+
+  <!-- Ride Pass -->
+  <section id="pass" class="section">
+    <div class="container card" style="padding:28px">
+      <div class="row">
+        <div>
+          <h2>Z-Ride Pass</h2>
+          <p class="muted">Lock in your monthly commute with predictable pricing. Ideal for students and office commuters. Includes daily ride & km limits to prevent overuse while keeping fares low.</p>
+          <ul class="list" style="margin-top:14px;gap:10px;display:grid">
+            <li><span class="check"></span><span>City-only focus for faster ETAs</span></li>
+            <li><span class="check"></span><span>Transparent pricing with fair km limits</span></li>
+            <li><span class="check"></span><span>Ride Pass for students & office commute</span></li>
+            <li><span class="check"></span><span>Weekly driver payouts to ensure retention</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+            <button class="btn">Get a Pass</button>
+            <a class="btn secondary" href="#cta">For Teams</a>
+          </div>
+        </div>
+        <div class="grid cols-2">
+          <div class="card" style="padding:16px"><div style="display:flex;justify-content:space-between"><h4>1 Day Pass</h4><span class="tag">Try & Go</span></div><div class="price">₹299</div><div class="muted small">up to 160 km • Max 12 rides</div></div>
+          <div class="card" style="padding:16px"><div style="display:flex;justify-content:space-between"><h4>7 Day Pass</h4><span class="tag">Popular</span></div><div class="price">₹1,799</div><div class="muted small">up to 1,000 km • Avg 12 rides/day</div></div>
+          <div class="card" style="padding:16px"><div style="display:flex;justify-content:space-between"><h4>15 Day Pass</h4><span class="tag">Value</span></div><div class="price">₹3,499</div><div class="muted small">up to 2,000 km • Avg 12 rides/day</div></div>
+          <div class="card" style="padding:16px"><div style="display:flex;justify-content:space-between"><h4>25 Day Pass</h4><span class="tag">Work Commuter</span></div><div class="price">₹5,499</div><div class="muted small">up to 3,500 km • Avg 12 rides/day</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2 style="text-align:center">Simple, transparent pricing</h2>
+      <p class="muted" style="text-align:center">Subscriptions for predictable riders, casual fares for everyone else.</p>
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card" style="padding:18px"><h3>City Ride</h3><div class="price">Smart fares</div><p class="muted small">Metered within 70 km city radius. Transparent km & time components.</p><ul class="list" style="display:grid;gap:8px;margin-top:8px"><li><span class="check"></span><span>Live ETA & upfront estimate</span></li><li><span class="check"></span><span>No surge beyond cap</span></li><li><span class="check"></span><span>Free 5-min wait</span></li></ul><button class="btn" style="width:100%;margin-top:10px">Book now</button></div>
+        <div class="card" style="padding:18px"><h3>Airport Ride</h3><div class="price">Smart fares</div><p class="muted small">Pre-scheduled pickups with capped surge and live tracking.</p><ul class="list" style="display:grid;gap:8px;margin-top:8px"><li><span class="check"></span><span>Flight-aware timing</span></li><li><span class="check"></span><span>Upfront pricing</span></li><li><span class="check"></span><span>Meet-and-greet</span></li></ul><button class="btn" style="width:100%;margin-top:10px">Book now</button></div>
+        <div class="card" style="padding:18px"><h3>Office Commute</h3><div class="price">Smart fares</div><p class="muted small">Perfect with Z-Ride Pass for predictable daily travel.</p><ul class="list" style="display:grid;gap:8px;margin-top:8px"><li><span class="check"></span><span>Fixed peak hours</span></li><li><span class="check"></span><span>Bulk team billing</span></li><li><span class="check"></span><span>Priority support</span></li></ul><button class="btn" style="width:100%;margin-top:10px">Book now</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section">
+    <div class="container card cta">
+      <div class="row">
+        <div><h3>Get early access in Pune</h3><p class="muted small">We’ll notify you when Zproo launches in your area.</p></div>
+        <form onsubmit="event.preventDefault(); alert('Thanks! We\\'ll reach out at ' + document.getElementById('email').value);" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <input id="email" type="email" placeholder="you@company.com" required>
+          <button class="btn" type="submit">Notify me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container grid cols-2">
+      <div class="card" style="padding:16px"><h4>Do you allow outstation rides?</h4><p class="muted small">Not at the moment. We focus on fast, reliable city-only rides within a 70 km radius.</p></div>
+      <div class="card" style="padding:16px"><h4>Is there a student pass?</h4><p class="muted small">Yes. Z-Ride Pass has student-friendly pricing with daily ride & km limits to keep costs low.</p></div>
+      <div class="card" style="padding:16px"><h4>Which EVs do you use?</h4><p class="muted small">Primarily Tata Tiago EV and similar range EVs, optimized for 160–200 km daily operations.</p></div>
+      <div class="card" style="padding:16px"><h4>How are drivers paid?</h4><p class="muted small">Weekly payouts with attendance & performance bonuses to ensure consistent service quality.</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container"><div class="logo"><span class="logo-badge">⚡</span><span>Zproo EV Rides</span></div>
+      <p class="muted small">Tech Centre, 5th floor, 502 Plot No. 30, Phase 1, Rajiv Gandhi Infotech Park, Hinjewadi, Pune 411057</p>
+      <p class="muted small">📱 7758908732 • ✉️ info@zproo.com</p>
+      <p class="muted small">© <span id="year"></span> Zproo EV Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
